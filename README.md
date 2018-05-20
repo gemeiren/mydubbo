@@ -13,8 +13,13 @@ https://help.sonatype.com/repomanager3/maven-repositories
 
 3、启动
 
-4、登录
+4、登录虚拟机
 http://192.168.0.105:8086
+
+
+虚拟机启动命令：
+D:\nexus-3.11.0-01-win64\nexus-3.11.0-01\bin>nexus.exe /run
+D:\zookeeper-3.4.12\bin>zkServer.cmd
 
 
 
