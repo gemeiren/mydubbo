@@ -63,7 +63,40 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
+        
+        
+        
+        <!-- 项目 右键 》run as 》 maven bulid 》弹出对话框》在goals中输入mybatis-generator:generate 
+        	或者 点击select 》选择你的mybatis插件 》apply 》run -->
+        	
+        <!-- <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.3.5</version>
+                <configuration>
+                    <configurationFile>src/main/resources/mybatis-generate-config.xml</configurationFile>
+                    <verbose>true</verbose>
+                    <overwrite>true</overwrite>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>Generate MyBatis Artifacts</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> -->
+        
       </plugins>
+      
+      
+    <!--   <build>
+        <plugins> -->
+            
+       <!--  </plugins>
+    </build> -->
+      
     </pluginManagement>
   </build>
 </project>
