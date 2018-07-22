@@ -55,5 +55,5 @@ https://blog.csdn.net/qq_18860653/article/details/53186040
 clean package deploy
 
 
-
+2018-07-22  发现启动客户端、服务端   报classPath 路径不对。。。新建 source的文件夹，将provider.xml加入。
 
