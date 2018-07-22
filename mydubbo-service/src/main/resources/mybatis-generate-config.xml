@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 
-    <!-- !!!! Driver Class Path !!!! D:\Developer\CODE\github_own\20180527\mydubbo -->
+    <!-- !!!! Driver Class Path !!!! D:\Developer\CODE\github_own\20180527\mydubbo 本地路径存放 mysql-connector-java的地方 -->
     <classPathEntry location="D:/Developer/CODE/github_own/20180527/mydubbo/mysql-connector-java-5.1.46-bin.jar"/>
 
     <context id="context" targetRuntime="MyBatis3">
@@ -13,7 +13,7 @@
             <property name="suppressDate" value="true"/>
         </commentGenerator>
 
-        <!-- !!!! Database Configurations !!!! -->
+        <!-- !!!! Database Configurations !!!!  本地数据库  -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/demo"
                         userId="root" password="123456"/>
@@ -22,26 +22,26 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <!-- !!!! Model Configurations !!!! -->
+        <!-- !!!! Model Configurations !!!! 生成的数据库对象 -->
         <javaModelGenerator targetPackage="org.mydubbo.repository.model"
                             targetProject="D:/Developer/CODE/github_own/20180527/mydubbo/mydubbo-service/src/main/java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <!-- !!!! Mapper XML Configurations !!!! -->
+        <!-- !!!! Mapper XML Configurations !!!! 生产对应的mapper文件 -->
         <sqlMapGenerator targetPackage="org.mydubbo.repository.mapper"
                          targetProject="D:/Developer/CODE/github_own/20180527/mydubbo/mydubbo-service/src/main/java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <!-- !!!! Mapper Interface Configurations !!!!  -->
+        <!-- !!!! Mapper Interface Configurations !!!! 生产对应接口文件  -->
         <javaClientGenerator targetPackage="org.mydubbo.repository.dao"
                              targetProject="D:/Developer/CODE/github_own/20180527/mydubbo/mydubbo-service/src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
-        <!-- !!!! Table Configurations !!!! 数据库表 -->
+        <!-- !!!! Table Configurations !!!! 要转换的数据库表 product -->
         <table tableName="product" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false"/>
     </context>

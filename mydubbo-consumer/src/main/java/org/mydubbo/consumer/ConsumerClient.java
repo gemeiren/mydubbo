@@ -9,7 +9,6 @@ public class ConsumerClient {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer.xml");  
         HelloService helloService = (HelloService) context.getBean("helloService");  
         String result = helloService.SayImp("2018-520");  
-        System.out.println(result);
         System.in.read(); 
     } 
 }
